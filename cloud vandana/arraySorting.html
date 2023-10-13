@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverse Words and Sort Array</title>
+</head>
+<body>
+
+<script>
+  // Function to reverse every word in a sentence
+  function reverseWords(sentence) {
+    return sentence.split(' ').map(word => word.split('').reverse().join('')).join(' ');
+  }
+
+  const inputSentence = prompt('Enter a sentence:');
+  const reversedSentence = reverseWords(inputSentence);
+  alert(`Reversed Words: ${reversedSentence}`);
+
+  // Sorting an array in descending order
+  const numbers = [5, 2, 8, 1, 9];
+  const sortedNumbers = numbers.sort((a, b) => b - a);
+
+  console.log('Sorted Numbers (Descending Order):', sortedNumbers);
+</script>
+
+</body>
+</html>
